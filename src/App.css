@@ -1,0 +1,117 @@
+/* Top-level layout */
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 3rem;
+}
+
+main {
+  padding-top: 1.5rem;
+}
+
+.pageHeader {
+  margin-bottom: 1.5rem;
+}
+
+.pageHeader h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.pageHeader p {
+  margin: 0.5rem 0 0;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.emptyState {
+  border: 1px dashed rgba(255, 255, 255, 0.25);
+  padding: 2rem;
+  border-radius: 18px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.cartList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cartSummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.checkoutForm {
+  display: grid;
+  gap: 1rem;
+  max-width: 480px;
+}
+
+.checkoutForm label {
+  display: grid;
+  gap: 0.25rem;
+  font-weight: 600;
+}
+
+.checkoutForm input {
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0.75rem;
+  background: rgba(0, 0, 0, 0.25);
+  color: inherit;
+}
+
+.checkoutSummary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.11);
+  border-color: rgba(255, 255, 255, 0.27);
+}
+
+.button--primary {
+  background: rgba(100, 108, 255, 0.3);
+  border-color: rgba(100, 108, 255, 0.4);
+}
+
+.confirmation {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 18px;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.04);
+}
