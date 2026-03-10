@@ -24,7 +24,7 @@ export default function App() {
   return (
     <AccessProvider>
       <CartProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.BASE_URL}>
           <Navigation />
           <main>
             <Routes>
