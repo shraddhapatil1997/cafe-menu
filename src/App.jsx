@@ -1,4 +1,12 @@
-import { BrowserRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom'
+import { useEffect } from 'react'
+import {
+  BrowserRouter,
+  Navigate,
+  Route,
+  Routes,
+  useLocation,
+  useNavigate,
+} from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
 import { AccessProvider, useAccess } from './context/AccessContext'
 import Navigation from './components/Navigation'
