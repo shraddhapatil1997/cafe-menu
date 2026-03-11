@@ -32,8 +32,7 @@ export const MENU_ITEMS = [
     category: 'Tea',
     description: 'Freshly brewed tea with lemon.',
     price: 2.8,
-    image:
-      'https://images.unsplash.com/photo-1547489436-0c5b6153bc03?auto=format&fit=crop&w=800&q=80',
+    image: new URL('../assets/iced-tea.svg', import.meta.url).href,
   },
   {
     id: 'matcha-latte',
@@ -41,8 +40,7 @@ export const MENU_ITEMS = [
     category: 'Tea',
     description: 'Creamy matcha with steamed milk.',
     price: 4.4,
-    image:
-      'https://images.unsplash.com/photo-1524594157363-eb5c8b57018b?auto=format&fit=crop&w=800&q=80',
+    image: new URL('../assets/matcha-latte.svg', import.meta.url).href,
   },
   {
     id: 'croissant',
@@ -51,7 +49,7 @@ export const MENU_ITEMS = [
     description: 'Flaky croissant baked daily.',
     price: 3.2,
     image:
-      'https://images.unsplash.com/photo-1496750736001-2c378977d512?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1464347744102-11db6282f854?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'muffin',
@@ -60,7 +58,7 @@ export const MENU_ITEMS = [
     description: 'Soft muffin with real blueberries.',
     price: 3.5,
     image:
-      'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80',
+      'https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&q=80',
   },
   {
     id: 'sandwich',
@@ -68,7 +66,6 @@ export const MENU_ITEMS = [
     category: 'Savory',
     description: 'Grilled chicken with fresh greens.',
     price: 6.5,
-    image:
-      'https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80',
+    image: new URL('../assets/sandwich.svg', import.meta.url).href,
   },
 ];
