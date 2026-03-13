@@ -32,7 +32,7 @@ export default function ScanPage() {
     <section className="scan">
       <header className="pageHeader">
         <h2>Scan the Cafe QR Code</h2>
-        <p>Use your phone camera to scan the QR code below and start your order.</p>
+        <p className='abc'>Use your phone camera to scan the QR code below and start your order.</p>
       </header>
 
       <div className="scan__card">

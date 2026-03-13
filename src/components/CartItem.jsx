@@ -20,7 +20,7 @@ export default function CartItem({ item, onUpdateQty, onRemove }) {
 
       <div className="cartItem__controls">
         <label>
-          Qty
+          Qty: 
           <input
             type="number"
             min={1}

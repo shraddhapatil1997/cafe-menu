@@ -20,7 +20,7 @@ main {
 
 .pageHeader p {
   margin: 0.5rem 0 0;
-  color: rgba(255, 255, 255, 0.75);
+  color: green;
 }
 
 .grid {

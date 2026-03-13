@@ -32,7 +32,7 @@ export const MENU_ITEMS = [
     category: 'Tea',
     description: 'Freshly brewed tea with lemon.',
     price: 2.8,
-    image: new URL('../assets/iced-tea.svg', import.meta.url).href,
+    image: new URL('../assets/iced-tea.webp', import.meta.url).href,
   },
   {
     id: 'matcha-latte',
@@ -40,7 +40,7 @@ export const MENU_ITEMS = [
     category: 'Tea',
     description: 'Creamy matcha with steamed milk.',
     price: 4.4,
-    image: new URL('../assets/matcha-latte.svg', import.meta.url).href,
+    image: new URL('../assets/Matcha-Latte.jpg', import.meta.url).href,
   },
   {
     id: 'croissant',
@@ -66,6 +66,6 @@ export const MENU_ITEMS = [
     category: 'Savory',
     description: 'Grilled chicken with fresh greens.',
     price: 6.5,
-    image: new URL('../assets/sandwich.svg', import.meta.url).href,
+    image: new URL('../assets/Chicken-Sandwich.jpg', import.meta.url).href,
   },
 ];
