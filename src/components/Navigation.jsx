@@ -24,17 +24,14 @@ export default function Navigation() {
           Menu
         </NavLink>
 
-        
-<NavLink
-  to="/cart"
-  className={({ isActive }) => (isActive ? "active cart-link" : "cart-link")}
->
-  <div className="cart-icon-wrapper">
-    <FaShoppingCart className="cart-icon" />
-    {itemCount > 0 && <span className="cart-badge">{itemCount}</span>}
-  </div>
-  Cart
-</NavLink>
+
+        <NavLink
+          to="/cart"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          <FaShoppingCart style={{ marginRight: "6px" }} />
+          Cart{itemCount ? ` (${itemCount})` : ""}
+        </NavLink>
 
 
         <NavLink to="/checkout" className={({ isActive }) => (isActive ? 'active' : '')}>
