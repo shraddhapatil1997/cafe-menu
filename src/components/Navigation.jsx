@@ -2,6 +2,8 @@ import { NavLink } from 'react-router-dom'
 import { useCart } from '../context/CartContext'
 import './Navigation.css'
 
+import { FaShoppingCart } from "react-icons/fa";
+
 export default function Navigation() {
   const { itemCount } = useCart()
 
@@ -21,9 +23,20 @@ export default function Navigation() {
         <NavLink to="/" end className={({ isActive }) => (isActive ? 'active' : '')}>
           Menu
         </NavLink>
-        <NavLink to="/cart" className={({ isActive }) => (isActive ? 'active' : '')}>
-          Cart{itemCount ? ` (${itemCount})` : ''}
-        </NavLink>
+
+        
+<NavLink
+  to="/cart"
+  className={({ isActive }) => (isActive ? "active cart-link" : "cart-link")}
+>
+  <div className="cart-icon-wrapper">
+    <FaShoppingCart className="cart-icon" />
+    {itemCount > 0 && <span className="cart-badge">{itemCount}</span>}
+  </div>
+  Cart
+</NavLink>
+
+
         <NavLink to="/checkout" className={({ isActive }) => (isActive ? 'active' : '')}>
           Checkout
         </NavLink>
